@@ -1,0 +1,2 @@
+transformers==4.40.2
+git+https://github.com/cszhz/transformers-neuronx.git@sdk219-embeding
