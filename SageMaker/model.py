@@ -110,6 +110,7 @@ def generate(inputs, byte_image):
     )
 
     image_sizes = [x.size for x in images] #[(1000, 667)]
+    image_sizes = [(1000, 667)]
 
     image_new=images[0].resize((WIDTH, HEIGHT))
 
