@@ -1,4 +1,4 @@
-# llava-v16-mistral-7b
+# Comipile llava-v16-mistral-7b
 
 
 
@@ -38,6 +38,8 @@ This tutorial will introduce how to build llava-v16-mistral-7b on AWS Inferentia
    ```
 5. Compile model
    ```
+   #before compile need to do some changes
+   
    python compile.py
    ```
 6. Test compiled model
