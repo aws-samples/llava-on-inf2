@@ -39,7 +39,17 @@ This tutorial will introduce how to build llava-v16-mistral-7b on AWS Inferentia
 5. Compile model
    ```
    #before compile need to do some changes
-   
+   cd /home/ubuntu/llava16_venv/lib/python3.10/site-packages/transformers/models/clip
+   vi modeling_clip.py
+
+   #add one line in 922
+   output_hidden_states= True
+
+   #change line add[-2]
+   hidden_states=encoder_outputs.hidden_states[-2],
+
+   cd /home/ubuntu/llava16/LLaVA
+   mkdir neuron
    python compile.py
    ```
 6. Test compiled model
