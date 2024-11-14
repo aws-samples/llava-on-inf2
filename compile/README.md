@@ -45,7 +45,7 @@ This tutorial will introduce how to build llava-v16-mistral-7b on AWS Inferentia
    #add one line in 922
    output_hidden_states= True
 
-   #change line add[-2]
+   #change line 868 adding [-2]
    hidden_states=encoder_outputs.hidden_states[-2],
 
    cd /home/ubuntu/llava16/LLaVA
