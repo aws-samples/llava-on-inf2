@@ -21,7 +21,7 @@ This tutorial will introduce how to build llava-v16-mistral-7b on AWS Inferentia
    python -m pip config set global.extra-index-url https://pip.repos.neuron.amazonaws.com
    pip install torch-neuronx==1.13.1.1.15.0
    python -m pip install neuronx-cc==2.14.227.0 torchvision==0.14.1
-   pip install transformers==4.40.2
+   pip install transformers==4.40.2 accelerate==1.0.0
    pip install --no-deps git+https://github.com/cszhz/transformers-neuronx.git@sdk219-embeding
    ```
 3. Code preparation
